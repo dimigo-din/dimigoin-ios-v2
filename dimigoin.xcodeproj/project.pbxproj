@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A1B6D8FB2773E7CE00433657 /* dimigoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EB2773E7CC00433657 /* dimigoinApp.swift */; };
-		A1B6D8FC2773E7CE00433657 /* dimigoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EB2773E7CC00433657 /* dimigoinApp.swift */; };
 		A1B6D8FD2773E7CE00433657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EC2773E7CC00433657 /* ContentView.swift */; };
-		A1B6D8FE2773E7CE00433657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EC2773E7CC00433657 /* ContentView.swift */; };
 		A1B6D8FF2773E7CE00433657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B6D8ED2773E7CE00433657 /* Assets.xcassets */; };
-		A1B6D9002773E7CE00433657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B6D8ED2773E7CE00433657 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,19 +17,10 @@
 		A1B6D8EC2773E7CC00433657 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1B6D8ED2773E7CE00433657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B6D8F22773E7CE00433657 /* dimigoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dimigoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1B6D8F82773E7CE00433657 /* dimigoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dimigoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1B6D8FA2773E7CE00433657 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A1B6D8EF2773E7CE00433657 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1B6D8F52773E7CE00433657 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,7 +34,6 @@
 			isa = PBXGroup;
 			children = (
 				A1B6D8EA2773E7CC00433657 /* Shared */,
-				A1B6D8F92773E7CE00433657 /* macOS */,
 				A1B6D8F32773E7CE00433657 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,17 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				A1B6D8F22773E7CE00433657 /* dimigoin.app */,
-				A1B6D8F82773E7CE00433657 /* dimigoin.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A1B6D8F92773E7CE00433657 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				A1B6D8FA2773E7CE00433657 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,23 +76,6 @@
 			productReference = A1B6D8F22773E7CE00433657 /* dimigoin.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A1B6D8F72773E7CE00433657 /* dimigoin (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1B6D9062773E7CE00433657 /* Build configuration list for PBXNativeTarget "dimigoin (macOS)" */;
-			buildPhases = (
-				A1B6D8F42773E7CE00433657 /* Sources */,
-				A1B6D8F52773E7CE00433657 /* Frameworks */,
-				A1B6D8F62773E7CE00433657 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "dimigoin (macOS)";
-			productName = "dimigoin (macOS)";
-			productReference = A1B6D8F82773E7CE00433657 /* dimigoin.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,9 +87,6 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					A1B6D8F12773E7CE00433657 = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
-					A1B6D8F72773E7CE00433657 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -147,7 +105,6 @@
 			projectRoot = "";
 			targets = (
 				A1B6D8F12773E7CE00433657 /* dimigoin (iOS) */,
-				A1B6D8F72773E7CE00433657 /* dimigoin (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -161,14 +118,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1B6D8F62773E7CE00433657 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1B6D9002773E7CE00433657 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -178,15 +127,6 @@
 			files = (
 				A1B6D8FD2773E7CE00433657 /* ContentView.swift in Sources */,
 				A1B6D8FB2773E7CE00433657 /* dimigoinApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1B6D8F42773E7CE00433657 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1B6D8FE2773E7CE00433657 /* ContentView.swift in Sources */,
-				A1B6D8FC2773E7CE00433657 /* dimigoinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,62 +305,6 @@
 			};
 			name = Release;
 		};
-		A1B6D9072773E7CE00433657 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9MGM27T9ZC;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = in.dimigo.ios.dimigoin;
-				PRODUCT_NAME = dimigoin;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		A1B6D9082773E7CE00433657 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9MGM27T9ZC;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = in.dimigo.ios.dimigoin;
-				PRODUCT_NAME = dimigoin;
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -438,15 +322,6 @@
 			buildConfigurations = (
 				A1B6D9042773E7CE00433657 /* Debug */,
 				A1B6D9052773E7CE00433657 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1B6D9062773E7CE00433657 /* Build configuration list for PBXNativeTarget "dimigoin (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1B6D9072773E7CE00433657 /* Debug */,
-				A1B6D9082773E7CE00433657 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,6 @@
+framework module Pods_dimigoin__iOS_ {
+  umbrella header "Pods-dimigoin (iOS)-umbrella.h"
+
+  export *
+  module * { export * }
+}

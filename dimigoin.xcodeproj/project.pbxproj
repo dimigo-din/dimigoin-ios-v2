@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37A4C8332A47E8F4571B4AED /* Pods_dimigoin__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDF751C34950AD56FD8B890 /* Pods_dimigoin__iOS_.framework */; };
 		A1B6D8FB2773E7CE00433657 /* dimigoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EB2773E7CC00433657 /* dimigoinApp.swift */; };
 		A1B6D8FD2773E7CE00433657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EC2773E7CC00433657 /* ContentView.swift */; };
 		A1B6D8FF2773E7CE00433657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B6D8ED2773E7CE00433657 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		835FD3A838AA8C76AC87B1C9 /* Pods-dimigoin (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dimigoin (iOS).release.xcconfig"; path = "Target Support Files/Pods-dimigoin (iOS)/Pods-dimigoin (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		A1B6D8EB2773E7CC00433657 /* dimigoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dimigoinApp.swift; sourceTree = "<group>"; };
 		A1B6D8EC2773E7CC00433657 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1B6D8ED2773E7CE00433657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B6D8F22773E7CE00433657 /* dimigoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dimigoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D5CC7E27A975DC00D38015 /* dimigoin--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "dimigoin--iOS--Info.plist"; sourceTree = "<group>"; };
+		BC786EEBA493D503A85331BA /* Pods-dimigoin (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dimigoin (iOS).debug.xcconfig"; path = "Target Support Files/Pods-dimigoin (iOS)/Pods-dimigoin (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		CCDF751C34950AD56FD8B890 /* Pods_dimigoin__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dimigoin__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,17 +29,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A4C8332A47E8F4571B4AED /* Pods_dimigoin__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92D5A8E43E2A7C73ED006D67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC786EEBA493D503A85331BA /* Pods-dimigoin (iOS).debug.xcconfig */,
+				835FD3A838AA8C76AC87B1C9 /* Pods-dimigoin (iOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A1B6D8E52773E7CC00433657 = {
 			isa = PBXGroup;
 			children = (
+				A1D5CC7E27A975DC00D38015 /* dimigoin--iOS--Info.plist */,
 				A1B6D8EA2773E7CC00433657 /* Shared */,
 				A1B6D8F32773E7CE00433657 /* Products */,
+				92D5A8E43E2A7C73ED006D67 /* Pods */,
+				D41CB765EFC2DF1A2D2D1C28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +74,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D41CB765EFC2DF1A2D2D1C28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCDF751C34950AD56FD8B890 /* Pods_dimigoin__iOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -63,9 +89,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1B6D9032773E7CE00433657 /* Build configuration list for PBXNativeTarget "dimigoin (iOS)" */;
 			buildPhases = (
+				35C4DCD897A7CB28C9D7E239 /* [CP] Check Pods Manifest.lock */,
 				A1B6D8EE2773E7CE00433657 /* Sources */,
 				A1B6D8EF2773E7CE00433657 /* Frameworks */,
 				A1B6D8F02773E7CE00433657 /* Resources */,
+				2CF8E560265D866B88E473F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,6 +147,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CF8E560265D866B88E473F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dimigoin (iOS)/Pods-dimigoin (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dimigoin (iOS)/Pods-dimigoin (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dimigoin (iOS)/Pods-dimigoin (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35C4DCD897A7CB28C9D7E239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dimigoin (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1B6D8EE2773E7CE00433657 /* Sources */ = {
@@ -184,6 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -237,6 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -246,6 +318,7 @@
 		};
 		A1B6D9042773E7CE00433657 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC786EEBA493D503A85331BA /* Pods-dimigoin (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -254,11 +327,12 @@
 				DEVELOPMENT_TEAM = 9MGM27T9ZC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dimigoin--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -276,6 +350,7 @@
 		};
 		A1B6D9052773E7CE00433657 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 835FD3A838AA8C76AC87B1C9 /* Pods-dimigoin (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -284,11 +359,12 @@
 				DEVELOPMENT_TEAM = 9MGM27T9ZC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dimigoin--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

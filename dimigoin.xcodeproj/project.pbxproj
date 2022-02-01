@@ -11,6 +11,7 @@
 		A1B6D8FB2773E7CE00433657 /* dimigoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EB2773E7CC00433657 /* dimigoinApp.swift */; };
 		A1B6D8FD2773E7CE00433657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EC2773E7CC00433657 /* ContentView.swift */; };
 		A1B6D8FF2773E7CE00433657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B6D8ED2773E7CE00433657 /* Assets.xcassets */; };
+		A1D5CC8127A978F900D38015 /* DimigoinKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1D5CC8027A978F900D38015 /* DimigoinKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A4C8332A47E8F4571B4AED /* Pods_dimigoin__iOS_.framework in Frameworks */,
+				A1D5CC8127A978F900D38015 /* DimigoinKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +102,9 @@
 			dependencies = (
 			);
 			name = "dimigoin (iOS)";
+			packageProductDependencies = (
+				A1D5CC8027A978F900D38015 /* DimigoinKit */,
+			);
 			productName = "dimigoin (iOS)";
 			productReference = A1B6D8F22773E7CE00433657 /* dimigoin.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +133,9 @@
 				Base,
 			);
 			mainGroup = A1B6D8E52773E7CC00433657;
+			packageReferences = (
+				A1D5CC7F27A978F900D38015 /* XCRemoteSwiftPackageReference "DimigoinKit" */,
+			);
 			productRefGroup = A1B6D8F32773E7CE00433657 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -403,6 +411,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1D5CC7F27A978F900D38015 /* XCRemoteSwiftPackageReference "DimigoinKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dimigoin/DimigoinKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1D5CC8027A978F900D38015 /* DimigoinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1D5CC7F27A978F900D38015 /* XCRemoteSwiftPackageReference "DimigoinKit" */;
+			productName = DimigoinKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1B6D8E62773E7CC00433657 /* Project object */;
 }

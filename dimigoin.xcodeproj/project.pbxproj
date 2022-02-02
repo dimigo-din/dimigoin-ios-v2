@@ -12,6 +12,7 @@
 		A1B6D8FD2773E7CE00433657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EC2773E7CC00433657 /* ContentView.swift */; };
 		A1B6D8FF2773E7CE00433657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B6D8ED2773E7CE00433657 /* Assets.xcassets */; };
 		A1D5CC8127A978F900D38015 /* DimigoinKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1D5CC8027A978F900D38015 /* DimigoinKit */; };
+		A1D5CC8327A97BD400D38015 /* SelectPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5CC8227A97BD400D38015 /* SelectPlaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		A1B6D8ED2773E7CE00433657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B6D8F22773E7CE00433657 /* dimigoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dimigoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D5CC7E27A975DC00D38015 /* dimigoin--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "dimigoin--iOS--Info.plist"; sourceTree = "<group>"; };
+		A1D5CC8227A97BD400D38015 /* SelectPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlaceView.swift; sourceTree = "<group>"; };
 		BC786EEBA493D503A85331BA /* Pods-dimigoin (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dimigoin (iOS).debug.xcconfig"; path = "Target Support Files/Pods-dimigoin (iOS)/Pods-dimigoin (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		CCDF751C34950AD56FD8B890 /* Pods_dimigoin__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dimigoin__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 			children = (
 				A1B6D8EB2773E7CC00433657 /* dimigoinApp.swift */,
 				A1B6D8EC2773E7CC00433657 /* ContentView.swift */,
+				A1D5CC8227A97BD400D38015 /* SelectPlaceView.swift */,
 				A1B6D8ED2773E7CE00433657 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D5CC8327A97BD400D38015 /* SelectPlaceView.swift in Sources */,
 				A1B6D8FD2773E7CE00433657 /* ContentView.swift in Sources */,
 				A1B6D8FB2773E7CE00433657 /* dimigoinApp.swift in Sources */,
 			);

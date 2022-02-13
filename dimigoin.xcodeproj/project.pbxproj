@@ -11,6 +11,11 @@
 		A1B6D8FB2773E7CE00433657 /* dimigoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EB2773E7CC00433657 /* dimigoinApp.swift */; };
 		A1B6D8FD2773E7CE00433657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EC2773E7CC00433657 /* ContentView.swift */; };
 		A1B6D8FF2773E7CE00433657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B6D8ED2773E7CE00433657 /* Assets.xcassets */; };
+		A1B6E9D727B8EABD0073498B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6E9D627B8EABD0073498B /* HomeView.swift */; };
+		A1B6E9D927B8EB710073498B /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6E9D827B8EB710073498B /* NoticeView.swift */; };
+		A1B6E9DB27B8EB8C0073498B /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6E9DA27B8EB8C0073498B /* ScheduleView.swift */; };
+		A1B6E9DD27B8EBAD0073498B /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6E9DC27B8EBAD0073498B /* SubscriptionView.swift */; };
+		A1B6E9DF27B8EBC00073498B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6E9DE27B8EBC00073498B /* ProfileView.swift */; };
 		A1D5CC8127A978F900D38015 /* DimigoinKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1D5CC8027A978F900D38015 /* DimigoinKit */; };
 		A1D5CC8327A97BD400D38015 /* SelectPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5CC8227A97BD400D38015 /* SelectPlaceView.swift */; };
 /* End PBXBuildFile section */
@@ -21,6 +26,11 @@
 		A1B6D8EC2773E7CC00433657 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1B6D8ED2773E7CE00433657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B6D8F22773E7CE00433657 /* dimigoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dimigoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B6E9D627B8EABD0073498B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A1B6E9D827B8EB710073498B /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
+		A1B6E9DA27B8EB8C0073498B /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		A1B6E9DC27B8EBAD0073498B /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
+		A1B6E9DE27B8EBC00073498B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		A1D5CC7E27A975DC00D38015 /* dimigoin--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "dimigoin--iOS--Info.plist"; sourceTree = "<group>"; };
 		A1D5CC8227A97BD400D38015 /* SelectPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlaceView.swift; sourceTree = "<group>"; };
 		BC786EEBA493D503A85331BA /* Pods-dimigoin (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dimigoin (iOS).debug.xcconfig"; path = "Target Support Files/Pods-dimigoin (iOS)/Pods-dimigoin (iOS).debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +75,11 @@
 			children = (
 				A1B6D8EB2773E7CC00433657 /* dimigoinApp.swift */,
 				A1B6D8EC2773E7CC00433657 /* ContentView.swift */,
+				A1B6E9D827B8EB710073498B /* NoticeView.swift */,
+				A1B6E9DA27B8EB8C0073498B /* ScheduleView.swift */,
+				A1B6E9DC27B8EBAD0073498B /* SubscriptionView.swift */,
+				A1B6E9DE27B8EBC00073498B /* ProfileView.swift */,
+				A1B6E9D627B8EABD0073498B /* HomeView.swift */,
 				A1D5CC8227A97BD400D38015 /* SelectPlaceView.swift */,
 				A1B6D8ED2773E7CE00433657 /* Assets.xcassets */,
 			);
@@ -206,9 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B6E9DF27B8EBC00073498B /* ProfileView.swift in Sources */,
 				A1D5CC8327A97BD400D38015 /* SelectPlaceView.swift in Sources */,
+				A1B6E9D727B8EABD0073498B /* HomeView.swift in Sources */,
 				A1B6D8FD2773E7CE00433657 /* ContentView.swift in Sources */,
+				A1B6E9D927B8EB710073498B /* NoticeView.swift in Sources */,
 				A1B6D8FB2773E7CE00433657 /* dimigoinApp.swift in Sources */,
+				A1B6E9DD27B8EBAD0073498B /* SubscriptionView.swift in Sources */,
+				A1B6E9DB27B8EB8C0073498B /* ScheduleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +365,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -377,6 +398,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

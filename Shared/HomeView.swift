@@ -18,9 +18,10 @@ struct HomeView: View {
                         .font(.system(size: 26, weight: .bold))
                         .foregroundColor(Color.magenta)
                     Spacer()
-                    Image(systemName: "bell.fill")
-                        .font(.system(size: 26))
-                        .foregroundColor(Color.gray)
+                    Image("bell.disabled")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30, alignment: .center)
                 }
                 VStack{
                     HStack{

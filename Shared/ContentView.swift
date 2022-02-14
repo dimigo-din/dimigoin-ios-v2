@@ -14,62 +14,120 @@ extension Color{
     static let darkgray = Color("darkgray")
 }
 
+struct RoundedCorner: Shape {
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
+}
+
+extension View {
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape(RoundedCorner(radius: radius, corners: corners))
+    }
+}
+
 struct ContentView: View {
     @State var selection = 0
     var body: some View {
         TabView(selection: $selection){
             HomeView()
-                .tabItem{
-                    if(selection == 0){
-                        Image("dock.home.enabled")
-                    } else{
-                        Image("dock.home.disabled")
-                    }
-                    Text("메인")
-                        .bold()
-                }.tag(0)
+                .tag(0)
             NoticeView()
-                .tabItem{
-                    if(selection == 1){
-                        Image("dock.notice.enabled")
-                    } else{
-                        Image("dock.notice.disabled")
-                    }
-                    Text("알림장")
-                        .bold()
-                }.tag(1)
+                .tag(1)
             ScheduleView()
-                .tabItem{
-                    if(selection == 2){
-                        Image("dock.schedule.enabled")
-                    } else{
-                        Image("dock.schedule.disabled")
-                    }
-                    Text("일정")
-                        .bold()
-                }.tag(2)
+                .tag(2)
             SubscriptionView()
-                .tabItem{
-                    if(selection == 3){
-                        Image("dock.subscription.enabled")
-                    } else{
-                        Image("dock.subscription.disabled")
-                    }
-                    Text("신청")
-                        .bold()
-                }.tag(3)
+                .tag(3)
             ProfileView()
-                .tabItem{
-                    if(selection == 4){
-                        Image("dock.profile.enabled")
-                    } else{
-                        Image("dock.profile.disabled")
-                    }
-                    Text("내정보")
-                        .bold()
-                }.tag(4)
+                .tag(4)
         }
         .accentColor(Color.magenta)
+        .overlay(
+            Color.white
+                .cornerRadius(20, corners: [.topLeft, .topRight])
+                .edgesIgnoringSafeArea(.vertical)
+                .frame(height: 50)
+                .overlay(
+                    HStack{
+                        Group{
+                            Spacer()
+                            Button(action: {
+                                selection = 0
+                            }, label: {
+                                VStack(spacing: 0){
+                                    Image(selection == 0 ? "dock.home.enabled" : "dock.home.disabled")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 25, height: 25, alignment: .center)
+                                    Text("메인")
+                                        .font(.system(size: 12, weight: .bold))
+                                        .foregroundColor(selection == 0 ? Color.magenta : Color.gray)
+                                }
+                            })
+                            Spacer()
+                            Button(action: {
+                                selection = 1
+                            }, label: {
+                                VStack(spacing: 0){
+                                    Image(selection == 1 ? "dock.notice.enabled" : "dock.notice.disabled")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 25, height: 25, alignment: .center)
+                                    Text("알림장")
+                                        .font(.system(size: 12, weight: .bold))
+                                        .foregroundColor(selection == 1 ? Color.magenta : Color.gray)
+                                }
+                            })
+                        }
+                        Spacer()
+                        Button(action: {
+                            selection = 2
+                        }, label: {
+                            VStack(spacing: 0){
+                                Image(selection == 2 ? "dock.schedule.enabled" : "dock.schedule.disabled")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 25, height: 25, alignment: .center)
+                                Text("일정")
+                                    .font(.system(size: 12, weight: .bold))
+                                    .foregroundColor(selection == 2 ? Color.magenta : Color.gray)
+                            }
+                        })
+                        Spacer()
+                        Button(action: {
+                            selection = 3
+                        }, label: {
+                            VStack(spacing: 0){
+                                Image(selection == 3 ? "dock.subscription.enabled" : "dock.subscription.disabled")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 25, height: 25, alignment: .center)
+                                Text("신청")
+                                    .font(.system(size: 12, weight: .bold))
+                                    .foregroundColor(selection == 3 ? Color.magenta : Color.gray)
+                            }
+                        })
+                        Spacer()
+                        Button(action: {
+                            selection = 4
+                        }, label: {
+                            VStack(spacing: 0){
+                                Image(selection == 4 ? "dock.profile.enabled" : "dock.profile.disabled")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 25, height: 25, alignment: .center)
+                                Text("프로필")
+                                    .font(.system(size: 12, weight: .bold))
+                                    .foregroundColor(selection == 4 ? Color.magenta : Color.gray)
+                            }
+                        })
+                        Spacer()
+                    }
+                )
+        ,alignment: .bottom)
     }
 }
 

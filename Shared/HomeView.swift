@@ -28,8 +28,10 @@ struct HomeView: View {
                         Text("나의 위치")
                             .font(.system(size: 22, weight: .bold))
                         Spacer()
-                        Image(systemName: "greaterthan")
-                            .foregroundColor(Color.gray)
+                        Image("arrow.right")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 7, height: 12, alignment: .center)
                     }
                     .padding(.bottom, 25)
                     HStack{
@@ -110,8 +112,10 @@ struct HomeView: View {
                         Text("오늘의 급식")
                             .font(.system(size: 22, weight: .bold))
                         Spacer()
-                        Image(systemName: "greaterthan")
-                            .foregroundColor(Color.gray)
+                        Image("arrow.right")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 7, height: 12, alignment: .center)
                     }
                     .padding(.bottom, 25)
                     HStack(alignment: .top){

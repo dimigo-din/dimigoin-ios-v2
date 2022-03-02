@@ -8,10 +8,20 @@
 import SwiftUI
 
 extension Color{
-    static let magenta = Color("magenta")
-    static let background = Color("background")
-    static let gray = Color("gray")
-    static let darkgray = Color("darkgray")
+    static let point = Color(red: 232 / 255, green: 60 / 255, blue: 119 / 255)
+    static let background = Color(red: 242 / 255, green: 243 / 255, blue: 245 / 255)
+    static let c1 = Color(red: 80 / 255, green: 89 / 255, blue: 102 / 255)
+    static let c2 = Color(red: 177 / 255, green: 184 / 255, blue: 193 / 255)
+    static let c3 = Color(red: 210 / 255, green: 214 / 255, blue: 219 / 255)
+}
+
+extension Font{
+    static let T1 = Font.system(size: 24, weight: .bold)
+    static let T2 = Font.system(size: 22, weight: .bold)
+    static let T3 = Font.system(size: 18, weight: .bold)
+    static let T4 = Font.system(size: 16, weight: .bold)
+    static let T5 = Font.system(size: 14, weight: .bold)
+    static let T6 = Font.system(size: 12, weight: .bold)
 }
 
 struct RoundedCorner: Shape {
@@ -44,7 +54,7 @@ struct ContentView: View {
             ProfileView()
                 .tag(4)
         }
-        .accentColor(Color.magenta)
+        .accentColor(Color.point)
         .overlay(
             Color.white
                 .cornerRadius(20, corners: [.topLeft, .topRight])
@@ -63,8 +73,8 @@ struct ContentView: View {
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 25, height: 25, alignment: .center)
                                     Text("메인")
-                                        .font(.system(size: 12, weight: .bold))
-                                        .foregroundColor(selection == 0 ? Color.magenta : Color.gray)
+                                        .font(.T6)
+                                        .foregroundColor(selection == 0 ? Color.point : Color.c3)
                                 }
                             })
                             Spacer()
@@ -77,8 +87,8 @@ struct ContentView: View {
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 25, height: 25, alignment: .center)
                                     Text("알림장")
-                                        .font(.system(size: 12, weight: .bold))
-                                        .foregroundColor(selection == 1 ? Color.magenta : Color.gray)
+                                        .font(.T6)
+                                        .foregroundColor(selection == 1 ? Color.point : Color.c3)
                                 }
                             })
                         }
@@ -92,8 +102,8 @@ struct ContentView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 25, height: 25, alignment: .center)
                                 Text("일정")
-                                    .font(.system(size: 12, weight: .bold))
-                                    .foregroundColor(selection == 2 ? Color.magenta : Color.gray)
+                                    .font(.T6)
+                                    .foregroundColor(selection == 2 ? Color.point : Color.c3)
                             }
                         })
                         Spacer()
@@ -106,8 +116,8 @@ struct ContentView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 25, height: 25, alignment: .center)
                                 Text("신청")
-                                    .font(.system(size: 12, weight: .bold))
-                                    .foregroundColor(selection == 3 ? Color.magenta : Color.gray)
+                                    .font(.T6)
+                                    .foregroundColor(selection == 3 ? Color.point : Color.c3)
                             }
                         })
                         Spacer()
@@ -120,8 +130,8 @@ struct ContentView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 25, height: 25, alignment: .center)
                                 Text("프로필")
-                                    .font(.system(size: 12, weight: .bold))
-                                    .foregroundColor(selection == 4 ? Color.magenta : Color.gray)
+                                    .font(.T6)
+                                    .foregroundColor(selection == 4 ? Color.point : Color.c3)
                             }
                         })
                         Spacer()

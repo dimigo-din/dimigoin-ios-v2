@@ -17,6 +17,7 @@
 		A1B6E9DD27B8EBAD0073498B /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6E9DC27B8EBAD0073498B /* SubscriptionView.swift */; };
 		A1B6E9DF27B8EBC00073498B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6E9DE27B8EBC00073498B /* ProfileView.swift */; };
 		A1D4371927CFC90800DFECA2 /* SnackbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4371827CFC90700DFECA2 /* SnackbarView.swift */; };
+		A1D4371B27D063B700DFECA2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4371A27D063B700DFECA2 /* MainView.swift */; };
 		A1D5CC8127A978F900D38015 /* DimigoinKit in Frameworks */ = {isa = PBXBuildFile; productRef = A1D5CC8027A978F900D38015 /* DimigoinKit */; };
 		A1D5CC8327A97BD400D38015 /* SelectPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5CC8227A97BD400D38015 /* SelectPlaceView.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		A1B6E9DC27B8EBAD0073498B /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
 		A1B6E9DE27B8EBC00073498B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		A1D4371827CFC90700DFECA2 /* SnackbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackbarView.swift; sourceTree = "<group>"; };
+		A1D4371A27D063B700DFECA2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A1D5CC7E27A975DC00D38015 /* dimigoin--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "dimigoin--iOS--Info.plist"; sourceTree = "<group>"; };
 		A1D5CC8227A97BD400D38015 /* SelectPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlaceView.swift; sourceTree = "<group>"; };
 		BC786EEBA493D503A85331BA /* Pods-dimigoin (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dimigoin (iOS).debug.xcconfig"; path = "Target Support Files/Pods-dimigoin (iOS)/Pods-dimigoin (iOS).debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				A1D5CC8227A97BD400D38015 /* SelectPlaceView.swift */,
 				A1B6D8ED2773E7CE00433657 /* Assets.xcassets */,
 				A1D4371827CFC90700DFECA2 /* SnackbarView.swift */,
+				A1D4371A27D063B700DFECA2 /* MainView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				A1B6E9DF27B8EBC00073498B /* ProfileView.swift in Sources */,
 				A1D5CC8327A97BD400D38015 /* SelectPlaceView.swift in Sources */,
 				A1B6E9D727B8EABD0073498B /* HomeView.swift in Sources */,
+				A1D4371B27D063B700DFECA2 /* MainView.swift in Sources */,
 				A1B6D8FD2773E7CE00433657 /* ContentView.swift in Sources */,
 				A1D4371927CFC90800DFECA2 /* SnackbarView.swift in Sources */,
 				A1B6E9D927B8EB710073498B /* NoticeView.swift in Sources */,
@@ -364,6 +368,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "dimigoin--iOS--Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "모바일 학생증 본인 인증을 위해 Face ID를 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -397,6 +402,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "dimigoin--iOS--Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "모바일 학생증 본인 인증을 위해 Face ID를 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

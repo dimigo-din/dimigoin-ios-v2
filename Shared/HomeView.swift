@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var showDetails: Bool = false
+    @State var showDetails: Bool = false
+    @State var icon: String = ""
     var body: some View {
         ZStack{
             Color.background
@@ -21,6 +22,7 @@ struct HomeView: View {
                         .frame(width: 31, height: 30)
                     Spacer()
                     Button(action: {
+                        icon = "star"
                         self.showDetails.toggle()
                         print(UIScreen.main.bounds.height)
                         print(UIScreen.main.bounds.height/4)
@@ -166,7 +168,7 @@ struct HomeView: View {
                 Spacer()
             }
             .padding(.horizontal, 20)
-            SnackbarView()
+            SnackbarView(icon: $icon)
                 .offset(y: self.showDetails ? -UIScreen.main.bounds.height/2.5 : -UIScreen.main.bounds.height)
                 .animation(.interpolatingSpring(mass: 0.3, stiffness: 50, damping: 10, initialVelocity: 0))
         }

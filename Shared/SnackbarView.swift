@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct SnackbarView: View {
+    @Binding var icon: String
     var body: some View {
         HStack(spacing: 4){
-            Image("snackbar.change")
+            Image("snackbar." + icon)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 24, height: 24)
@@ -23,14 +24,8 @@ struct SnackbarView: View {
                 .font(.system(size: 14, weight: .bold))
         }
             .padding()
-            .frame(height: 50)
+            .frame(width: UIScreen.main.bounds.width/1.3, height: 50)
             .background(Color.white)
             .cornerRadius(50)
-    }
-}
-
-struct SnackbarView_Previews: PreviewProvider {
-    static var previews: some View {
-        SnackbarView()
     }
 }

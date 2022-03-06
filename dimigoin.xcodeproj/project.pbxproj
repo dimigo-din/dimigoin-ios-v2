@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		37A4C8332A47E8F4571B4AED /* Pods_dimigoin__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDF751C34950AD56FD8B890 /* Pods_dimigoin__iOS_.framework */; };
+		A114D95427D4DFE300E718BF /* MealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114D95327D4DFE300E718BF /* MealView.swift */; };
 		A1B6D8FB2773E7CE00433657 /* dimigoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EB2773E7CC00433657 /* dimigoinApp.swift */; };
 		A1B6D8FD2773E7CE00433657 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B6D8EC2773E7CC00433657 /* ContentView.swift */; };
 		A1B6D8FF2773E7CE00433657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B6D8ED2773E7CE00433657 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		835FD3A838AA8C76AC87B1C9 /* Pods-dimigoin (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dimigoin (iOS).release.xcconfig"; path = "Target Support Files/Pods-dimigoin (iOS)/Pods-dimigoin (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		A114D95327D4DFE300E718BF /* MealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealView.swift; sourceTree = "<group>"; };
 		A1B6D8EB2773E7CC00433657 /* dimigoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dimigoinApp.swift; sourceTree = "<group>"; };
 		A1B6D8EC2773E7CC00433657 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1B6D8ED2773E7CE00433657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				A1B6E9D827B8EB710073498B /* NoticeView.swift */,
 				A1B6E9DA27B8EB8C0073498B /* ScheduleView.swift */,
 				A1B6E9DC27B8EBAD0073498B /* SubscriptionView.swift */,
+				A114D95327D4DFE300E718BF /* MealView.swift */,
 				A1B6E9DE27B8EBC00073498B /* ProfileView.swift */,
 				A1B6E9D627B8EABD0073498B /* HomeView.swift */,
 				A1D5CC8227A97BD400D38015 /* SelectPlaceView.swift */,
@@ -234,6 +237,7 @@
 				A1B6D8FD2773E7CE00433657 /* ContentView.swift in Sources */,
 				A1D4371927CFC90800DFECA2 /* SnackbarView.swift in Sources */,
 				A1B6E9D927B8EB710073498B /* NoticeView.swift in Sources */,
+				A114D95427D4DFE300E718BF /* MealView.swift in Sources */,
 				A1B6D8FB2773E7CE00433657 /* dimigoinApp.swift in Sources */,
 				A1B6E9DD27B8EBAD0073498B /* SubscriptionView.swift in Sources */,
 				A1B6E9DB27B8EB8C0073498B /* ScheduleView.swift in Sources */,

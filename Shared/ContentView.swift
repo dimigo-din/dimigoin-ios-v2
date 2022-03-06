@@ -41,13 +41,13 @@ extension View {
 }
 
 struct ContentView: View {
-    @ObservedObject var api = DimigoinAPI()
+//    @ObservedObject var api = DimigoinKit()
     @State var selection = 0
     var body: some View {
         TabView(selection: $selection){
             HomeView()
                 .tag(0)
-            NoticeView()
+            MealView()
                 .tag(1)
             ScheduleView()
                 .tag(2)

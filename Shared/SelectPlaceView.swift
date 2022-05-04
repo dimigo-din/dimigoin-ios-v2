@@ -9,7 +9,15 @@ import SwiftUI
 
 struct SelectPlaceView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack{
+                Image("arrow.left")
+                Text("위치 선택")
+                    .foregroundColor(.c2)
+                    .font(.T1)
+            }
+            ScrollPlaceView()
+        }
     }
 }
 

@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @State var showDetails: Bool = false
     @State var icon: String = ""
+    @ObservedObject var setting = Setting()
     var body: some View {
         ZStack{
             Color.background
@@ -39,10 +40,16 @@ struct HomeView: View {
                         Text("나의 위치")
                             .font(.system(size: 22, weight: .bold))
                         Spacer()
-                        Image("arrow.right")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 7, height: 12, alignment: .center)
+                        Button(action:{
+                            print(setting.displaying)
+                            setting.displaying = "place"
+                            print(setting.displaying)
+                        }, label:{
+                            Image("arrow.right")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 7, height: 12, alignment: .center)
+                        })
                     }
                     .padding(.bottom, 25)
                     HStack{
